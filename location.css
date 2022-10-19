@@ -1,0 +1,233 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Big shoulders display',cursive;
+}
+body{
+  width: 375px;
+  margin: 0 auto;
+}
+
+                                         /* header */
+.header{
+  position: relative;
+}
+
+                                    /*     for button  */
+.return-button{
+  position: absolute;
+  top: 0;
+  left: 0; 
+}
+.return-button{
+  display: flex;
+}
+.location-secound-btn{ 
+  background-color: #D5966c;
+  border: none;
+  padding: 1.5rem;
+  cursor: pointer;
+}
+.location-btn{
+  height: 4.5rem;
+  width: 12.75rem;
+  border: none;
+  background-color: #151515;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: 0.227rem;
+  cursor: pointer;
+  
+}
+                                      /* for button hover */
+  .return-button:hover .location-btn{
+    background-color: #D5966c;
+  }
+  .return-button:hover .location-secound-btn{
+    background-color: #151515;
+  }
+.mobile-map-image{
+  display: block;
+  width: 100%;
+}
+.tablet-map-image, .desktop-map-image{
+  display: none;
+}
+
+
+                                              /* section */
+.location-details{
+  width: 100%;
+  background-color: #151515;
+  padding: 3rem 1rem 3.5rem 1rem;
+  color: white;
+  
+
+}
+.details-title{
+  font-weight: 900;
+  line-height: 2.813rem;
+  font-size :3.125rem; 
+  margin-bottom: 3rem;
+}
+.addres-details{
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: 1.25rem  ;
+}
+.golden-location{
+  color: #d5966c;
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 900;
+}
+.addres{
+  font-family: 'outfit',sans-serif;
+  font-weight: 300;
+  line-height: 1.75rem;
+  font-size: 1.125rem;
+}
+.addres-paragraph{
+  font-family: 'outfit',sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 300;
+}
+
+                                                  /* footer */
+
+.footer{
+  width: 100%;
+  background-color: #d5966c;
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: 2.375rem ;
+  padding: 3rem 2rem 3rem 2rem;
+}
+.footer-light-logo{
+  display: block;
+}
+.footer-paragraph{
+  color: #151515;
+  font-family: 'Outfit',sans-serif;
+  font-size: 1rem;
+  line-height: 1.625rem;
+}
+.icon-container{
+  filter: invert(1);
+}
+.facebook-icon{
+  margin-right: 1.25rem;
+  cursor: pointer;
+}
+.facebook-icon:hover{
+  filter: invert(1);
+}
+.instagram-icon{
+  margin-right: 1.25rem;
+  cursor: pointer;
+}
+.instagram-icon:hover{
+  filter: invert(1);
+}
+.twitter-icon{
+  cursor: pointer;
+}
+.twitter-icon:hover{
+  filter: invert(1);
+}
+
+
+/* mediaa queriieess  768px */
+@media screen and (min-width:48rem) {
+  body{
+    width: 48rem;
+  }
+
+  /*                                header */
+  .mobile-map-image{
+    display: none;
+  }
+  .tablet-map-image{
+    display: block;
+  }
+  .return-button{
+    left: 2.438rem;
+  }
+
+  /*                       location details */
+  .location-details{
+    padding: 5.5rem 2.5rem 5rem 2.438rem;
+    display: grid;
+    grid-template-columns: 13.938rem auto;
+    column-gap: 4.25rem;
+  }
+  /*                      footer */
+  .footer{
+    padding: 3.5rem 2.5rem 3.5rem 2.438rem;
+    grid-template-columns: auto auto auto;
+    
+  }
+  .icon-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  .footer-paragraph{
+    width: 17.563rem;
+    margin-left: 4.059rem;
+    margin-right: 8.313rem;
+  }
+}
+
+
+/* media query 1440px */
+@media screen and (min-width:90rem) {
+  body{
+    width: 90rem;
+  }
+  /* header */
+  .tablet-map-image{
+    display: none;
+  }
+  .desktop-map-image{
+    display: block;
+  }
+  .return-button{
+    left: 9.75rem;
+  }
+    /*              addres           */
+    .location-details{
+      padding:6.5rem 10.313rem 8rem  10.313rem;
+      column-gap: 13.75rem;
+    }
+    .addres-details{
+      width: 33.75rem;
+    }
+    .details-title{
+      font-size: 4.375rem;
+      line-height: 4.375rem;
+    }
+    .golden-location{
+      font-size:  2.25rem; 
+    }
+    .addres,.addres-paragraph{
+      font-size:1.375rem ;
+    }
+    /*                 footer          */
+
+    .footer{
+      padding: 5rem 10.313rem;
+    }
+    .footer-light-logo{
+      width: 9.973rem;
+    }
+    .footer-paragraph{
+      font-size:1.125rem;
+      width: 26.875rem;
+      line-height: 1.75rem;
+      margin-left: 8.777rem;
+      margin-right: 17.5rem;
+    }
+}
